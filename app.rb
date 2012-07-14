@@ -5,5 +5,5 @@ require 'rubygems'
 require 'sinatra'
 
 get '/' do
-  request.ip
+  request.ip.inspect rescue "400"
 end
