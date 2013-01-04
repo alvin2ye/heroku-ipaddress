@@ -4,5 +4,5 @@ require 'bundler'
 Bundler.require
 
 get '/' do
-  request.ip rescue "400"
+  request.ip
 end
